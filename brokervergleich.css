@@ -1,0 +1,68 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+        .main{
+            display: flex;
+            height: 100%;
+            background-color: darkblue;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #87CEEB 0%, #ADD8E6 100%);
+            padding: 1.2rem 3rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            padding: 0.5rem 0;
+            position: relative;
+            text-transform: capitalize;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.3));
+            border-radius: 2px;
+            transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }

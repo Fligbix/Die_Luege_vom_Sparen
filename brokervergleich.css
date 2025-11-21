@@ -1,8 +1,3 @@
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            }
 
         .main{
             display: flex;
@@ -65,4 +60,128 @@
 
         nav a:hover::after {
             width: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .table-wrapper {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        th {
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        td {
+            padding: 18px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tbody tr:hover {
+            background-color: #f8f9ff;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .broker-name {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.05em;
+        }
+        
+        .low {
+            color: #27ae60;
+            font-weight: 500;
+        }
+        
+        .medium {
+            color: #f39c12;
+            font-weight: 500;
+        }
+        
+        .high {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        
+        .yes {
+            color: #27ae60;
+            font-weight: 500;
+        }
+        
+        .no {
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        
+        .deposit {
+            color: #3498db;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            th, td {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+            
+            .table-wrapper {
+                overflow-x: auto;
+            }
+            
+            table {
+                min-width: 900px;
+            }
         }

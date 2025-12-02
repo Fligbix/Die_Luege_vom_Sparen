@@ -259,6 +259,8 @@ footer {
     }
 }
     nav {
+
+        nav {
             background: linear-gradient(135deg, #87CEEB 0%, #ADD8E6 100%);
             padding: 1.2rem 3rem;
             backdrop-filter: blur(10px);
@@ -307,4 +309,5 @@ footer {
 
         nav a:hover::after {
             width: 100%;
+        }
         }
